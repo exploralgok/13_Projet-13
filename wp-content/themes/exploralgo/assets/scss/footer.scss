@@ -1,0 +1,115 @@
+@import "./variables.scss";
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px $light-grey solid;
+
+    ul {
+        margin: 0;
+        padding:0;
+        display:flex;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    
+
+    .now{
+        padding: 72px 0px;
+        .title{
+            font-size: 28px;
+            letter-spacing: 0.03em;
+            font-weight: 400;
+        }
+
+        .subtitle{
+            font-size: 104px;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+            line-height: 0.1;
+
+            .word-highlight{
+                color: $secondary-color;
+            }
+        }
+
+        .details-contact{
+            display: flex;
+            justify-content: center;
+
+            .btn-contact{
+                border: 1px solid $light-grey;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                border-radius: 4px;
+                padding: 8px 24px;
+
+                .icon{
+                    width: 25px;
+                    margin-right: 8px
+                }
+
+                .contact{
+                    font-size: 16px;
+                }
+
+
+            }
+        }
+    }
+
+    .later{
+        margin-top: 80px;
+        background-color: $text-color;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $dark-grey;
+
+        .title{
+            margin:64px;
+            color: $dark-grey;
+
+            &.regular-size{
+                font-size: 22px;
+            }
+
+            &.small-size{
+                font-size:16px;
+            }
+        }
+
+        .footer__social-media{
+            display: flex;
+
+            .menu-footer{
+                .menu-item{
+                border: 1px solid $dark-grey;
+                border-radius: 50px;
+                width: 330px;
+                height: 40px;
+                }
+
+
+            }
+
+        }
+    }
+}
