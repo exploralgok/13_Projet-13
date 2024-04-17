@@ -1,0 +1,35 @@
+  .hero-row{
+    padding: 64px;
+  }
+
+  .half-columns{
+    display: flex;
+    margin-bottom: 80px;
+
+
+    .first-column{
+      flex:2; 
+      margin-top:0;
+     
+    }
+
+    .second-column{
+      flex:2;
+      font-size: 18px;
+      line-height: 30px;
+
+    }
+
+  }
+  .case-study{
+    .title-column{
+      font-size: 48px;
+      color: $secondary-color ;
+    }
+}
+
+.separator-light{
+  border-top: 1px solid $light-grey;
+  padding-top: 80px;
+
+}

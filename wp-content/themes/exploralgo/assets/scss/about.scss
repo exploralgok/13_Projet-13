@@ -1,0 +1,104 @@
+.hero-row{
+    display: flex;
+    gap:16px;
+    margin-bottom: 104px;
+
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+        flex:2;
+
+        .content-title{
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        .content-main{
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        .content-notes{
+            color: $secondary-color;
+            font-weight: 700;
+
+        }
+    }
+
+
+    .hero__img{
+        display: flex;
+        max-height:600px;
+        height: auto;
+        width: auto;
+        flex:2
+    }
+}
+
+.experiences{
+    margin-bottom: 104px;
+    .experiences__section-name{
+        display: flex;
+        margin-bottom: 32px;
+        .experiences__title{
+            flex: 0 0 66%;
+            min-width: 0;
+            margin-left: 16px;
+        }
+    }
+
+    .experiences__list{
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    .experiences__details{
+        display:flex;
+        gap:64px;
+        .experiences__item{
+            flex: 2;
+        }
+        .experiences__tools{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            align-items: center;
+            .tools-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-basis: calc(100% / 3);
+                .icon{
+                    border-radius:50%;
+                    border:1px solid $light-grey;   
+                    padding: 10px; 
+                    overflow: visible;
+                }
+            }
+        }
+    }
+}
+}
+
+.formations{
+    margin-bottom: 104px;
+    .formations__list{
+        display: flex;
+        gap: 32px;
+        .formations__item{
+            flex : 1;
+        }
+    }
+}
+
+.border-light{
+    border:1px solid $light-grey;
+    border-radius: 24px;
+    padding: 24px;
+
+}
+
+.section-title{
+    margin-bottom: 32px;
+    margin-left: 16px;
+
+}

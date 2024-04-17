@@ -6,7 +6,8 @@ Theme Name: Mota Photo
 @import './footer.scss';
 @import './home.scss';
 @import './variables.scss';
-
+@import './about.scss';
+@import './single-projets.scss';
 
 // IMPORT FONT
 
@@ -98,10 +99,14 @@ button:hover {
 }
 
 .icon{
-    width: 25px;
-    height: 25px;
+    max-width: 25px;
+    width: auto;
+    height: auto;
 }
 
+.light-background{
+    background-color: $light-color;
+}
 // Title
 
 h1{
