@@ -12,7 +12,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="hero__img">
-                <img class="img-item" src="<?php echo get_template_directory_uri() . '/assets/images/1.jpg'; ?>" alt="">        
+                <img class="img-item" src="<?php echo get_template_directory_uri() . '/assets/images/Kenza.png'; ?>" alt="">        
 
             </div>
         </div>
@@ -43,7 +43,7 @@
                         <?php the_post_thumbnail('post-thumbnail', ['class' => 'icon']);?>
                         <h2 class="experience__title"><?php the_title(); ?></h2>
                         <p class="experience__duration"><?php the_field("duree"); ?></p>
-                        <p class="experience__mission"><?php the_field("description"); ?></p>
+                        <div class="experience__mission"><?php the_field("description"); ?></div>
 
                     </div>
 

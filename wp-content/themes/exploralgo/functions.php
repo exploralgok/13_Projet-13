@@ -102,3 +102,159 @@ function save_taxonomy_custom_meta_field( $term_id ) {
 }  
 add_action( 'edited_outils', 'save_taxonomy_custom_meta_field', 10, 2 );  
 add_action( 'create_outils', 'save_taxonomy_custom_meta_field', 10, 2 );
+
+// NL
+
+function enqueue_my_script() {
+  wp_enqueue_script('my-ajax-script', get_template_directory_uri() . '/assets/js/ajax.js', array('jquery'));
+  wp_localize_script('my-ajax-script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_script');
+
+function montraitement_callback() {
+  $formData = $_POST['formData'];
+
+  // Récupérer les données du formulaire
+  parse_str($formData, $formFields);
+
+  // Récupérer l'email soumis
+  $email = sanitize_email($formFields['email']);
+
+  // Vérifier si l'utilisateur existe déjà
+  $user_id = email_exists($email);
+
+  if (!$user_id) {
+      // Si l'utilisateur n'existe pas, enregistrer un nouvel utilisateur
+      $password = wp_generate_password(12, false);
+      $user_id = wp_create_user($email, $password, $email);
+      if (!is_wp_error($user_id)) {
+          // Ajouter le rôle d'abonné à l'utilisateur
+          $user = new WP_User($user_id);
+          $user->set_role('subscriber');
+      } else {
+          // Gérer les erreurs si la création de l'utilisateur échoue
+          echo 'Une erreur s\'est produite lors de la création de l\'utilisateur.';
+          wp_die();
+      }
+  }
+
+  echo 'Votre message a été envoyé avec succès !';
+  wp_die();
+}
+add_action('wp_ajax_montraitement', 'montraitement_callback');
+add_action('wp_ajax_nopriv_montraitement', 'montraitement_callback');
+
+
+// Page d'options
+
+/**
+ * Add a new options page named "Contact".
+ */
+function contact_register_options_page() {
+  add_menu_page(
+      'Contact',
+      'Contact',
+      'manage_options',
+      'contact_options',
+      'contact_options_page_html'
+  );
+}
+add_action( 'admin_menu', 'contact_register_options_page' );
+
+/**
+* The "Contact" page html.
+*/
+function contact_options_page_html() {
+  if ( ! current_user_can( 'manage_options' ) ) {
+      return;
+  }
+
+  if ( isset( $_GET['settings-updated'] ) ) {
+      add_settings_error(
+          'contact_options_mesages',
+          'contact_options_message',
+          esc_html__( 'Settings Saved', 'text_domain' ),
+          'updated'
+      );
+  }
+
+  settings_errors( 'contact_options_mesages' );
+
+  ?>
+  <div class="wrap">
+      <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
+      <form action="options.php" method="post">
+          <?php
+              settings_fields( 'contact_options_group' );
+              do_settings_sections( 'contact_options' );
+              submit_button( 'Enregistrer les paramètres' );
+          ?>
+      </form>
+  </div>
+  <?php
+}
+
+/**
+ * Register our settings.
+ */
+function contact_register_settings() {
+  register_setting( 'contact_options_group', 'contact_options' );
+
+  add_settings_section(
+      'contact_options_sections',
+      false,
+      false,
+      'contact_options'
+  );
+
+  add_settings_field(
+      'contact_option_tel',
+      esc_html__( 'Téléphone', 'text_domain' ),
+      'render_contact_option_tel_field',
+      'contact_options',
+      'contact_options_sections',
+      [
+          'label_for' => 'contact_option_tel',
+      ]
+  );
+
+  add_settings_field(
+    'contact_option_mail',
+    esc_html__( 'E-mail', 'text_domain' ),
+    'render_contact_option_mail_field',
+    'contact_options',
+    'contact_options_sections',
+    [
+        'label_for' => 'contact_option_mail',
+    ]
+);
+
+}
+add_action( 'admin_init', 'contact_register_settings' );
+
+/**
+ * Render the "my_option_1" field.
+ */
+function render_contact_option_tel_field( $args ) {
+  $value = get_option( 'contact_options' )[$args['label_for']] ?? '';
+  ?>
+  <input
+      type="text"
+      id="<?php echo esc_attr( $args['label_for'] ); ?>"
+      name="contact_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
+      value="<?php echo esc_attr( $value ); ?>">
+  <p class="description"><?php esc_html_e( 'This is a description for our field.', 'text_domain' ); ?></p>
+  <?php
+}
+
+function render_contact_option_mail_field( $args ) {
+  $value = get_option( 'contact_options' )[$args['label_for']] ?? '';
+  ?>
+  <input
+      type="text"
+      id="<?php echo esc_attr( $args['label_for'] ); ?>"
+      name="contact_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
+      value="<?php echo esc_attr( $value ); ?>">
+  <p class="description"><?php esc_html_e( 'This is a description for our field.', 'text_domain' ); ?></p>
+  <?php
+}

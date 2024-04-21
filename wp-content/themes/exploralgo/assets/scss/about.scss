@@ -25,13 +25,17 @@
         }
     }
 
-
     .hero__img{
         display: flex;
-        max-height:600px;
-        height: auto;
-        width: auto;
-        flex:2
+        // max-height:600px;
+        // height: auto;
+        width: 50vh;
+        flex:2;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
 
@@ -56,6 +60,21 @@
         gap:64px;
         .experiences__item{
             flex: 2;
+
+            .experience__title{
+                margin-bottom: 0px;
+            }
+
+            .experience__duration{
+                margin-top: 2px;
+                color: $light-grey;
+            }
+
+            .experience__mission{
+                li{
+                    margin-bottom: 8px;
+                }
+            }
         }
         .experiences__tools{
             display: flex;
@@ -86,6 +105,14 @@
         gap: 32px;
         .formations__item{
             flex : 1;
+
+            .formations__name{
+                margin-bottom: 0px;
+            }
+            .formations__date{
+                margin-top: 2px;
+                color: $light-grey;
+            }
         }
     }
 }
@@ -94,11 +121,9 @@
     border:1px solid $light-grey;
     border-radius: 24px;
     padding: 24px;
-
 }
 
 .section-title{
     margin-bottom: 32px;
     margin-left: 16px;
-
 }

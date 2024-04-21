@@ -6,13 +6,14 @@
             <h2 class="title">Vous avez un projet ?</h2>
             <p class="subtitle">Construisons-le <span class="word-highlight">ensemble</span></p>
             <div class="details-contact">
-                <a class="footer__whatsapp btn-contact btn-icon" target='_blank' href="https://wa.me/33605742162">
+                
+                <a class="footer__whatsapp btn-contact btn-icon" target='_blank' href="<?php echo get_option( 'contact_options' )['contact_option_tel'] ?? '';?>">
                     <img class='icon' src="<?php echo get_template_directory_uri() . '/assets/images/whatsapp.svg';?>"></img>
-                    <p class="contact">+33 6 05 74 21 62</p>
+                    <p class="contact">Discutons sur Whats'App</p>
                 </a>
-                <a class="footer__mail btn-contact btn-icon" taget='_blank' href="mailto:contact@exploralgo.fr">
+                <a class="footer__mail btn-contact btn-icon" taget='_blank' href="mailto:<?php echo get_option( 'contact_options' )['contact_option_mail'] ?? '';?>">
                     <img class='icon' src="<?php echo get_template_directory_uri() . '/assets/images/envelope-regular.svg';?>"></img>
-                    <p class="contact">contact@exploralgo.fr</p>
+                    <p class="contact">Discutons par e-mail</p>
                 </a>
             </div>
         </div>
@@ -26,7 +27,14 @@
                         'menu_class' => 'menu-footer', 
                     ) ); 
                 ?>
-                <div class="footer__newsletter">NL</div>
+                <div class="footer__newsletter">
+                    <form class="form__newsletter" id="monFormulaire">
+                        <input class="form__field" type="email" name="email" id="email">
+                        <label for="email" class="form__label">E-mail</label>
+                        <button class="form__btn btn-shaking" type="submit" id="button">Je m'abonne</button>
+                    </form>
+                    <div class="form__message" id="messageStatus"></div>
+                </div>
             </div>
             <p class="title small-size">Fait à la main, en France, avec amour et sur Wordpress 🤍</p>
         </div>

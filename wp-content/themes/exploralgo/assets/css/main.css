@@ -117,6 +117,86 @@ Theme Name: Mota Photo
         border-radius: 50px;
         width: 330px;
         height: 40px; }
+    .site-footer .later .footer__newsletter {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .site-footer .later .footer__newsletter .form__newsletter {
+        display: flex;
+        gap: 32px; }
+      .site-footer .later .footer__newsletter form {
+        position: relative;
+        width: 330px;
+        top: 15px; }
+      .site-footer .later .footer__newsletter input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border: 1px solid #6B7280;
+        border-radius: 50px;
+        background: transparent;
+        outline: 0;
+        padding: 2em 1em 1em 1em;
+        color: #fff;
+        font-size: 1em;
+        transition: background 0.35s ease-out;
+        box-sizing: border-box; }
+        .site-footer .later .footer__newsletter input::-webkit-input-placeholder {
+          color: #fff;
+          text-transform: capitalize; }
+        .site-footer .later .footer__newsletter input:-moz-placeholder {
+          color: #fff;
+          text-transform: capitalize; }
+        .site-footer .later .footer__newsletter input::-moz-placeholder {
+          color: #fff;
+          text-transform: capitalize; }
+        .site-footer .later .footer__newsletter input:-ms-input-placeholder {
+          color: #fff;
+          text-transform: capitalize; }
+        .site-footer .later .footer__newsletter input:focus {
+          background: #18845b;
+          border: 1px solid transparent; }
+        .site-footer .later .footer__newsletter input:focus + label {
+          transform: translate(-150px, -10px) scale(0.8);
+          color: #0c432e; }
+          .site-footer .later .footer__newsletter input:focus + label + button {
+            opacity: 1; }
+      .site-footer .later .footer__newsletter label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: 16px;
+        color: #fff;
+        transform-origin: left center;
+        transition: transform 0.25s ease-out, color 0.25s ease-out;
+        transform: translateX(-50%); }
+      .site-footer .later .footer__newsletter button {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        width: 120px;
+        height: 48px;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 1em;
+        background: #aee6d1;
+        color: #18845b;
+        cursor: pointer;
+        opacity: 0;
+        outline: none;
+        transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out; }
+      .site-footer .later .footer__newsletter button.is-active {
+        background: #aee6d1;
+        color: #18845b; }
+      .site-footer .later .footer__newsletter button.is-done {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        opacity: 1; }
+      .site-footer .later .footer__newsletter .form__message {
+        color: #6B7280;
+        margin-top: 16px; }
 
 .site-content {
   padding: 72px; }
@@ -126,6 +206,8 @@ Theme Name: Mota Photo
       font-size: 104px;
       letter-spacing: -0.02em;
       width: 98%; }
+    .site-content .hero .btn-primary {
+      padding: 16px 24px; }
   .site-content .gallery {
     margin-bottom: 112px; }
     .site-content .gallery .gallery__title {
@@ -152,14 +234,16 @@ Theme Name: Mota Photo
           margin-right: 16px;
           font-size: 22px;
           letter-spacing: 0.02em; }
-        .site-content .gallery .gallery__content .gallery__text .project-summary .project-tools__item {
-          border: 1px solid #18845b;
-          border-radius: 50px;
-          padding: 8px 16px;
-          margin-right: 16px;
-          color: #18845b;
-          text-decoration: none;
-          font-size: 10px; }
+        .site-content .gallery .gallery__content .gallery__text .project-summary .project-tools {
+          display: flex; }
+          .site-content .gallery .gallery__content .gallery__text .project-summary .project-tools .project-tools__item {
+            border: 1px solid #18845b;
+            border-radius: 50px;
+            padding: 8px 16px;
+            margin-right: 16px;
+            color: #18845b;
+            text-decoration: none;
+            font-size: 10px; }
 
 .about {
   margin-bottom: 112px; }
@@ -194,10 +278,11 @@ Theme Name: Mota Photo
       font-weight: 700; }
   .hero-row .hero__img {
     display: flex;
-    max-height: 600px;
-    height: auto;
-    width: auto;
+    width: 50vh;
     flex: 2; }
+    .hero-row .hero__img img {
+      width: 100%;
+      object-fit: contain; }
 
 .experiences {
   margin-bottom: 104px; }
@@ -217,6 +302,13 @@ Theme Name: Mota Photo
       gap: 64px; }
       .experiences .experiences__list .experiences__details .experiences__item {
         flex: 2; }
+        .experiences .experiences__list .experiences__details .experiences__item .experience__title {
+          margin-bottom: 0px; }
+        .experiences .experiences__list .experiences__details .experiences__item .experience__duration {
+          margin-top: 2px;
+          color: #E5E7EB; }
+        .experiences .experiences__list .experiences__details .experiences__item .experience__mission li {
+          margin-bottom: 8px; }
       .experiences .experiences__list .experiences__details .experiences__tools {
         display: flex;
         flex-wrap: wrap;
@@ -240,6 +332,11 @@ Theme Name: Mota Photo
     gap: 32px; }
     .formations .formations__list .formations__item {
       flex: 1; }
+      .formations .formations__list .formations__item .formations__name {
+        margin-bottom: 0px; }
+      .formations .formations__list .formations__item .formations__date {
+        margin-top: 2px;
+        color: #E5E7EB; }
 
 .border-light {
   border: 1px solid #E5E7EB;
@@ -252,6 +349,16 @@ Theme Name: Mota Photo
 
 .hero-row {
   padding: 64px; }
+  .hero-row .project-name {
+    font-size: 72px;
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .hero-row .links {
+    margin-top: 64px; }
+    .hero-row .links .link-wrapper {
+      text-decoration: none; }
+      .hero-row .links .link-wrapper .cta {
+        font-size: 16px; }
 
 .half-columns {
   display: flex;
@@ -264,9 +371,16 @@ Theme Name: Mota Photo
     font-size: 18px;
     line-height: 30px; }
 
-.case-study .title-column {
-  font-size: 48px;
-  color: #aee6d1; }
+.case-study {
+  margin-right: 160px;
+  margin-left: 160px; }
+  .case-study .title-column {
+    font-size: 48px;
+    color: #aee6d1; }
+
+.links {
+  display: flex;
+  gap: 16px; }
 
 .separator-light {
   border-top: 1px solid #E5E7EB;
@@ -304,16 +418,46 @@ button:hover {
   display: flex;
   align-items: center;
   border-radius: 50px;
-  padding: 16px 24px;
-  background-color: #343434;
+  padding: 8px 24px;
   gap: 8px;
   height: 40px;
   width: fit-content;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .btn-primary:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #343434;
+    border-radius: 10rem;
+    z-index: -2; }
+  .btn-primary:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #aee6d1;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1; }
+  .btn-primary:hover {
+    color: #343434; }
+    .btn-primary:hover:before {
+      width: 100%; }
   .btn-primary .cta {
     color: #ffffff;
     font-size: 20px;
     letter-spacing: 0.03em; }
+  .btn-primary:hover {
+    color: #343434; }
   .btn-primary .icon {
     filter: brightness(0) invert(1); }
 
@@ -323,7 +467,10 @@ button:hover {
   height: 40px;
   border-radius: 50px;
   color: #ffffff;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: transform 0.5s ease-in-out; }
+  .btn-secondary:hover {
+    transform: scale(1.05); }
 
 .btn-icon {
   display: flex;
@@ -332,12 +479,25 @@ button:hover {
   height: 40px;
   width: fit-content; }
 
+.btn-shaking:hover {
+  animation: shaking 0.2s infinite; }
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-1deg); }
+  50% {
+    transform: rotate(0deg); }
+  70% {
+    transform: rotate(1deg); }
+  100% {
+    transform: rotate(0deg); } }
 .icon {
   max-width: 25px;
   width: auto;
   height: auto; }
 
 .light-background {
-  background-color: #FFF9F3; }
+  background-color: #9EB0A9; }
 
 /*# sourceMappingURL=main.css.map */

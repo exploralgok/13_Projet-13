@@ -1,6 +1,23 @@
   .hero-row{
     padding: 64px;
-  }
+
+      .project-name{
+        font-size: 72px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .links{
+        margin-top: 64px;
+        .link-wrapper{
+        text-decoration: none;
+        .cta{
+          font-size: 16px;
+        }
+        }
+      }
+    }
+
 
   .half-columns{
     display: flex;
@@ -22,10 +39,18 @@
 
   }
   .case-study{
+    margin-right: 160px;
+    margin-left: 160px;
+
     .title-column{
       font-size: 48px;
       color: $secondary-color ;
     }
+}
+
+.links{
+  display: flex;
+  gap: 16px;
 }
 
 .separator-light{

@@ -11,6 +11,10 @@
         letter-spacing: -0.02em;
         width: 98%;
     }
+
+    .btn-primary{
+        padding: 16px 24px;
+    }
 }
 
 .gallery{
@@ -21,9 +25,6 @@
         font-weight: 400;
     }
     .gallery__content{
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
 
         .gallery__illu{
             width: 100%;
@@ -52,14 +53,19 @@
                     letter-spacing: 0.02em;
                 }
 
-                .project-tools__item{
-                    border: 1px solid $primary-color;
-                    border-radius : 50px;
-                    padding: 8px 16px;
-                    margin-right: 16px;
-                    color: $primary-color;
-                    text-decoration: none;
-                    font-size: 10px;
+                .project-tools{
+                    display: flex;
+                
+
+                    .project-tools__item{
+                        border: 1px solid $primary-color;
+                        border-radius : 50px;
+                        padding: 8px 16px;
+                        margin-right: 16px;
+                        color: $primary-color;
+                        text-decoration: none;
+                        font-size: 10px;
+                    }
                 }
             }
 

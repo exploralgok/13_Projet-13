@@ -41,9 +41,9 @@
                         <?php
                         foreach ( $article_terms as $key => $article_term ) {
                             ?>
-                            <a class="project-tools__item" href="<?php echo esc_url( get_term_link( $article_term ) ); ?>">
+                            <div class="project-tools__item">
                                 <?php echo esc_html( $article_term->name ); ?>
-                            </a>
+                            </div>
                             <?php
                         }
                         ?>
