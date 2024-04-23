@@ -61,6 +61,17 @@
                 border-radius: 4px;
                 padding: 8px 24px;
 
+                &:hover{
+                    animation: levelup 1s ease-in;
+                }
+                    @keyframes levelup {
+                       0% {transform: translateY(0px);}
+                       50% {transform: translateY(-5px);}
+                       75% {transform: translateY(-2px);}
+                       100% {transform: translateY(0px);}
+
+                    }                
+
                 .icon{
                     width: 25px;
                     margin-right: 8px
@@ -102,10 +113,11 @@
 
             .menu-footer{
                 .menu-item{
-                border: 1px solid $dark-grey;
+                border: 1px solid $dsrk-grey;
                 border-radius: 50px;
                 width: 330px;
                 height: 40px;
+                cursor: pointer;
                 }
             }
         }
@@ -118,83 +130,6 @@
                 display: flex;
                 gap: 32px;
             }
-                // .form__btn{
-                //     border: 1px solid $light-grey;
-                //     padding: 8px 24px;
-                //     height: 40px;
-                //     border-radius: 50px;
-                //     color : #ffffff;
-                //     background-color: transparent;
-                //     font-size:15px;
-                //     width: fit-content;
-                //     // &:hover{
-                //     //     border: 1px solid $secondary-color;
-                //     //     color: $dark-grey;
-                //     //     // background-image: linear-gradient(to right, $primary-color,$secondary-color);
-                //     //     // transition: background-image 0.3s;
-                //     //     background-color: $secondary-color;
-                //     //     transition: background-color 0.2s ease;
-                //     // }
-                // }
-
-                // .form__field {
-                //     font-family: inherit;
-                //     width: 100%;
-                //     border: 0;
-                //     border-bottom: 2px solid $light-grey;
-                //     outline: 0;
-                //     font-size: 1rem;
-                //     color: #ffffff;
-                //     padding: 7px 0;
-                //     background: transparent;
-                //     transition: border-color 0.2s;
-                //     margin-top: 16px; 
-
-
-                //      &::placeholder {
-                //          color: transparent;
-                //        }
-
-
-    
-                //        &:placeholder-shown ~ .form__label {
-                //          font-size: 1rem;
-                //          cursor: text;
-                //          //top: 20px;
-                //        }
-                // }
-
-                // .form__label {
-                //     position: absolute;
-                //     //top: 0;
-                //     display: block;
-                //     transition: 0.2s;
-                //     font-size: 1rem;
-                //     color: $light-grey;
-                //   }
-
-                //   .form__field:focus {
-                //     ~ .form__label {
-                //       position: absolute;
-                //       //top: 0;
-                //       display: block;
-                //       transition: 0.2s;
-                //       font-size: 1rem;
-                //       color: $secondary-color;
-                //       font-weight:300;   
-                //     }
-                //         ~ ::placeholder {
-                //             color: $light-grey;
-                //         }
-
-                //     padding-bottom: 6px;  
-                //     font-weight: 400;
-                //     border-width: 3px;
-                //     // border-image: linear-gradient(to right, $primary-color,$secondary-color);
-                //     border-color: $secondary-color;
-                //     border-image-slice: 1;
-                //   }
-
                 @mixin placeholder {
                     &::-webkit-input-placeholder { @content }
                     &:-moz-placeholder { @content }
@@ -285,7 +220,6 @@
                     opacity: 1;
                   }
                                     
-            
 
             .form__message{
                 color: $dark-grey;

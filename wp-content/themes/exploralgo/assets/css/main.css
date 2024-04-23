@@ -1,503 +1,135 @@
 /*
-Theme Name: Mota Photo
+Error: Undefined variable: "$dsrk-grey".
+        on line 116 of scss/footer.scss
+        from line 6 of scss/style.scss
+
+111:     }
+112:     &:hover {
+113: 		color: $text-color;
+114: 	}
+115: 
+116: 
+117:     .icon{
+118:         filter: brightness(0) invert(1);
+119:     }
+120: 
+121: }
+
+Backtrace:
+scss/footer.scss:116
+scss/style.scss:6
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
-.site-header {
-  padding: 24px 72px; }
-  .site-header .header {
-    font-weight: 700; }
-    .site-header .header ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center; }
-      .site-header .header ul li {
-        list-style-type: none;
-        padding: 0;
-        margin: 20px; }
-        .site-header .header ul li a {
-          text-decoration: none; }
-    .site-header .header .nav-bar {
-      display: flex;
-      justify-content: space-between;
-      height: 80px;
-      align-items: center;
-      background-color: white; }
-      .site-header .header .nav-bar .nav-bar__logo {
-        width: 150px; }
-      .site-header .header .nav-bar .nav-bar__links .menu-item {
-        padding: 0px 0px 0px 40px; }
-        .site-header .header .nav-bar .nav-bar__links .menu-item a {
-          color: #000000; }
-      .site-header .header .nav-bar .nav-bar__links .highlight {
-        border-radius: 50px;
-        padding: 0px 24px;
-        display: flex;
-        align-items: center;
-        background-color: #18845b;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        height: 40px;
-        margin-left: 36px; }
-        .site-header .header .nav-bar .nav-bar__links .highlight:hover {
-          transform: scale(1.1);
-          transition: transform 0.3s ease-in-out; }
-        .site-header .header .nav-bar .nav-bar__links .highlight a {
-          padding: 0;
-          color: #ffffff; }
-
-.site-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-top: 1px #E5E7EB solid;
-  margin-top: 64px; }
-  .site-footer ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center; }
-    .site-footer ul li {
-      list-style-type: none;
-      padding: 0;
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .site-footer ul a {
-      text-decoration: none;
-      color: #ffffff; }
-  .site-footer .now {
-    padding: 72px 0px; }
-    .site-footer .now .title {
-      font-size: 28px;
-      letter-spacing: 0.03em;
-      font-weight: 400; }
-    .site-footer .now .subtitle {
-      font-size: 104px;
-      letter-spacing: -0.02em;
-      font-weight: 700;
-      line-height: 0.1; }
-      .site-footer .now .subtitle .word-highlight {
-        color: #aee6d1; }
-    .site-footer .now .details-contact {
-      display: flex;
-      justify-content: center; }
-      .site-footer .now .details-contact .btn-contact {
-        border: 1px solid #E5E7EB;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        margin-right: 16px;
-        border-radius: 4px;
-        padding: 8px 24px; }
-        .site-footer .now .details-contact .btn-contact .icon {
-          width: 25px;
-          margin-right: 8px; }
-        .site-footer .now .details-contact .btn-contact .contact {
-          font-size: 16px; }
-  .site-footer .later {
-    margin-top: 80px;
-    background-color: #343434;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #6B7280; }
-    .site-footer .later .title {
-      margin: 64px;
-      color: #6B7280; }
-      .site-footer .later .title.regular-size {
-        font-size: 22px; }
-      .site-footer .later .title.small-size {
-        font-size: 16px; }
-    .site-footer .later .footer__social-media {
-      display: flex; }
-      .site-footer .later .footer__social-media .menu-footer .menu-item {
-        border: 1px solid #6B7280;
-        border-radius: 50px;
-        width: 330px;
-        height: 40px; }
-    .site-footer .later .footer__newsletter {
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-      .site-footer .later .footer__newsletter .form__newsletter {
-        display: flex;
-        gap: 32px; }
-      .site-footer .later .footer__newsletter form {
-        position: relative;
-        width: 330px;
-        top: 15px; }
-      .site-footer .later .footer__newsletter input {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        border: 1px solid #6B7280;
-        border-radius: 50px;
-        background: transparent;
-        outline: 0;
-        padding: 2em 1em 1em 1em;
-        color: #fff;
-        font-size: 1em;
-        transition: background 0.35s ease-out;
-        box-sizing: border-box; }
-        .site-footer .later .footer__newsletter input::-webkit-input-placeholder {
-          color: #fff;
-          text-transform: capitalize; }
-        .site-footer .later .footer__newsletter input:-moz-placeholder {
-          color: #fff;
-          text-transform: capitalize; }
-        .site-footer .later .footer__newsletter input::-moz-placeholder {
-          color: #fff;
-          text-transform: capitalize; }
-        .site-footer .later .footer__newsletter input:-ms-input-placeholder {
-          color: #fff;
-          text-transform: capitalize; }
-        .site-footer .later .footer__newsletter input:focus {
-          background: #18845b;
-          border: 1px solid transparent; }
-        .site-footer .later .footer__newsletter input:focus + label {
-          transform: translate(-150px, -10px) scale(0.8);
-          color: #0c432e; }
-          .site-footer .later .footer__newsletter input:focus + label + button {
-            opacity: 1; }
-      .site-footer .later .footer__newsletter label {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-top: 16px;
-        color: #fff;
-        transform-origin: left center;
-        transition: transform 0.25s ease-out, color 0.25s ease-out;
-        transform: translateX(-50%); }
-      .site-footer .later .footer__newsletter button {
-        position: absolute;
-        right: 0;
-        top: 1px;
-        width: 120px;
-        height: 48px;
-        border: 1px solid transparent;
-        border-radius: 50px;
-        font-size: 1em;
-        background: #aee6d1;
-        color: #18845b;
-        cursor: pointer;
-        opacity: 0;
-        outline: none;
-        transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out; }
-      .site-footer .later .footer__newsletter button.is-active {
-        background: #aee6d1;
-        color: #18845b; }
-      .site-footer .later .footer__newsletter button.is-done {
-        position: absolute;
-        right: 0px;
-        width: 100%;
-        opacity: 1; }
-      .site-footer .later .footer__newsletter .form__message {
-        color: #6B7280;
-        margin-top: 16px; }
-
-.site-content {
-  padding: 72px; }
-  .site-content .hero {
-    margin-bottom: 112px; }
-    .site-content .hero .hero__title {
-      font-size: 104px;
-      letter-spacing: -0.02em;
-      width: 98%; }
-    .site-content .hero .btn-primary {
-      padding: 16px 24px; }
-  .site-content .gallery {
-    margin-bottom: 112px; }
-    .site-content .gallery .gallery__title {
-      font-size: 40px;
-      letter-spacing: -0.02em;
-      font-weight: 400; }
-    .site-content .gallery .gallery__content .gallery__illu {
-      width: 100%;
-      height: 512px; }
-      .site-content .gallery .gallery__content .gallery__illu img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 30px; }
-    .site-content .gallery .gallery__content .gallery__text {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 64px;
-      margin-top: 32px; }
-      .site-content .gallery .gallery__content .gallery__text .project-summary {
-        display: flex;
-        align-items: center; }
-        .site-content .gallery .gallery__content .gallery__text .project-summary .project-name {
-          margin-right: 16px;
-          font-size: 22px;
-          letter-spacing: 0.02em; }
-        .site-content .gallery .gallery__content .gallery__text .project-summary .project-tools {
-          display: flex; }
-          .site-content .gallery .gallery__content .gallery__text .project-summary .project-tools .project-tools__item {
-            border: 1px solid #18845b;
-            border-radius: 50px;
-            padding: 8px 16px;
-            margin-right: 16px;
-            color: #18845b;
-            text-decoration: none;
-            font-size: 10px; }
-
-.about {
-  margin-bottom: 112px; }
-  .about .about__title {
-    font-size: 72px;
-    letter-spacing: -0.02em;
-    width: 90%;
-    margin-bottom: 32px; }
-  .about .about__text {
-    font-size: 18px;
-    width: 55%;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px; }
-
-.hero-row {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 104px; }
-  .hero-row .hero__content {
-    display: flex;
-    flex-direction: column;
-    flex: 2; }
-    .hero-row .hero__content .content-title {
-      font-size: 72px;
-      font-weight: 700; }
-    .hero-row .hero__content .content-main {
-      font-size: 18px;
-      line-height: 35px; }
-    .hero-row .hero__content .content-notes {
-      color: #aee6d1;
-      font-weight: 700; }
-  .hero-row .hero__img {
-    display: flex;
-    width: 50vh;
-    flex: 2; }
-    .hero-row .hero__img img {
-      width: 100%;
-      object-fit: contain; }
-
-.experiences {
-  margin-bottom: 104px; }
-  .experiences .experiences__section-name {
-    display: flex;
-    margin-bottom: 32px; }
-    .experiences .experiences__section-name .experiences__title {
-      flex: 0 0 66%;
-      min-width: 0;
-      margin-left: 16px; }
-  .experiences .experiences__list {
-    gap: 32px;
-    display: flex;
-    flex-direction: column; }
-    .experiences .experiences__list .experiences__details {
-      display: flex;
-      gap: 64px; }
-      .experiences .experiences__list .experiences__details .experiences__item {
-        flex: 2; }
-        .experiences .experiences__list .experiences__details .experiences__item .experience__title {
-          margin-bottom: 0px; }
-        .experiences .experiences__list .experiences__details .experiences__item .experience__duration {
-          margin-top: 2px;
-          color: #E5E7EB; }
-        .experiences .experiences__list .experiences__details .experiences__item .experience__mission li {
-          margin-bottom: 8px; }
-      .experiences .experiences__list .experiences__details .experiences__tools {
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1;
-        align-items: center; }
-        .experiences .experiences__list .experiences__details .experiences__tools .tools-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          flex-basis: calc(100% / 3); }
-          .experiences .experiences__list .experiences__details .experiences__tools .tools-item .icon {
-            border-radius: 50%;
-            border: 1px solid #E5E7EB;
-            padding: 10px;
-            overflow: visible; }
-
-.formations {
-  margin-bottom: 104px; }
-  .formations .formations__list {
-    display: flex;
-    gap: 32px; }
-    .formations .formations__list .formations__item {
-      flex: 1; }
-      .formations .formations__list .formations__item .formations__name {
-        margin-bottom: 0px; }
-      .formations .formations__list .formations__item .formations__date {
-        margin-top: 2px;
-        color: #E5E7EB; }
-
-.border-light {
-  border: 1px solid #E5E7EB;
-  border-radius: 24px;
-  padding: 24px; }
-
-.section-title {
-  margin-bottom: 32px;
-  margin-left: 16px; }
-
-.hero-row {
-  padding: 64px; }
-  .hero-row .project-name {
-    font-size: 72px;
-    margin-top: 16px;
-    margin-bottom: 16px; }
-  .hero-row .links {
-    margin-top: 64px; }
-    .hero-row .links .link-wrapper {
-      text-decoration: none; }
-      .hero-row .links .link-wrapper .cta {
-        font-size: 16px; }
-
-.half-columns {
-  display: flex;
-  margin-bottom: 80px; }
-  .half-columns .first-column {
-    flex: 2;
-    margin-top: 0; }
-  .half-columns .second-column {
-    flex: 2;
-    font-size: 18px;
-    line-height: 30px; }
-
-.case-study {
-  margin-right: 160px;
-  margin-left: 160px; }
-  .case-study .title-column {
-    font-size: 48px;
-    color: #aee6d1; }
-
-.links {
-  display: flex;
-  gap: 16px; }
-
-.separator-light {
-  border-top: 1px solid #E5E7EB;
-  padding-top: 80px; }
-
-* {
-  font-family: "Helvetica";
-  color: #343434; }
-
-.site {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1440px;
-  overflow: hidden; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-.highlight-word {
-  color: #aee6d1; }
-
-button:hover {
-  cursor: pointer; }
-
-.btn-primary {
-  display: flex;
-  align-items: center;
-  border-radius: 50px;
-  padding: 8px 24px;
-  gap: 8px;
-  height: 40px;
-  width: fit-content;
-  text-decoration: none;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1; }
-  .btn-primary:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #343434;
-    border-radius: 10rem;
-    z-index: -2; }
-  .btn-primary:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #aee6d1;
-    transition: all .3s;
-    border-radius: 10rem;
-    z-index: -1; }
-  .btn-primary:hover {
-    color: #343434; }
-    .btn-primary:hover:before {
-      width: 100%; }
-  .btn-primary .cta {
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0.03em; }
-  .btn-primary:hover {
-    color: #343434; }
-  .btn-primary .icon {
-    filter: brightness(0) invert(1); }
-
-.btn-secondary {
-  border: 1px solid #343434;
-  padding: 8px 24px;
-  height: 40px;
-  border-radius: 50px;
-  color: #ffffff;
-  background-color: #ffffff;
-  transition: transform 0.5s ease-in-out; }
-  .btn-secondary:hover {
-    transform: scale(1.05); }
-
-.btn-icon {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 40px;
-  width: fit-content; }
-
-.btn-shaking:hover {
-  animation: shaking 0.2s infinite; }
-@keyframes shaking {
-  0% {
-    transform: rotate(0deg); }
-  20% {
-    transform: rotate(-1deg); }
-  50% {
-    transform: rotate(0deg); }
-  70% {
-    transform: rotate(1deg); }
-  100% {
-    transform: rotate(0deg); } }
-.icon {
-  max-width: 25px;
-  width: auto;
-  height: auto; }
-
-.light-background {
-  background-color: #9EB0A9; }
-
-/*# sourceMappingURL=main.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$dsrk-grey\".\A         on line 116 of scss/footer.scss\A         from line 6 of scss/style.scss\A \A 111:     }\A 112:     &:hover {\A 113: 		color: $text-color;\A 114: 	}\A 115: \A 116: \A 117:     .icon{\A 118:         filter: brightness(0) invert(1);\A 119:     }\A 120: \A 121: }"; }

@@ -258,3 +258,39 @@ function render_contact_option_mail_field( $args ) {
   <p class="description"><?php esc_html_e( 'This is a description for our field.', 'text_domain' ); ?></p>
   <?php
 }
+
+
+//  Envoie d'email
+
+// Fonction pour envoyer un e-mail aux abonnés lorsqu'un nouvel article est publié
+function envoyer_email_nouvel_article($post_id) {
+  // Vérifie si l'article est nouvellement publié
+  if (get_post_status($post_id) === 'publish') {
+      // Récupère les abonnés du site
+      $abonnes = get_users(array('role' => 'subscriber'));
+
+      // Récupère les détails de l'article publié
+      $article = get_post($post_id);
+      $titre_article = $article->post_title;
+      $contenu_article = $article->post_content;
+
+      // Charge le contenu HTML du modèle d'e-mail
+      $template_path = get_template_directory() . '/email_template.html';
+      $email_template = file_get_contents($template_path);
+
+      // Remplace les balises de substitution par les valeurs réelles
+      $email_template = str_replace('{{TITRE_ARTICLE}}', $titre_article, $email_template);
+      $email_template = str_replace('{{CONTENU_ARTICLE}}', $contenu_article, $email_template);
+
+      // Construit le contenu de l'e-mail
+      $sujet = 'Nouvel article publié : ' . $titre_article;
+
+      // Envoie l'e-mail à chaque abonné
+      foreach ($abonnes as $abonne) {
+          wp_mail($abonne->user_email, $sujet, $email_template);
+      }
+  }
+}
+
+// Ajoute un crochet pour déclencher la fonction lorsqu'un nouvel article est publié
+add_action('publish_post', 'envoyer_email_nouvel_article');
