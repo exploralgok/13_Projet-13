@@ -21,7 +21,7 @@
 
             <div class="experiences__section-name">
                 <h2 class="experiences__title">Experiences professionnelles</h2>
-                <h2 class="experiences__title">Outils de travail</h2>
+                <h2 class="experiences__title no-display-mobile">Outils de travail</h2>
             </div>
 
             <div class="experiences__list">

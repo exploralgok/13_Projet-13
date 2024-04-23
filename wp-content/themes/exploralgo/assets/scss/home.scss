@@ -1,7 +1,19 @@
 @import "variables.scss";
 
+
+@mixin mobile {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
 .site-content{
     padding: 72px;
+
+    @include mobile {
+        padding: 20px;
+    }
+
 
 .hero{
     margin-bottom: 112px;
@@ -10,6 +22,11 @@
         font-size: 104px;
         letter-spacing: -0.02em;
         width: 98%;
+
+        @include mobile {
+            font-size: 64px;
+        }
+    
     }
 
     .btn-primary{
@@ -47,6 +64,13 @@
                 display: flex;
                 align-items: center;
 
+                @include mobile {
+                    flex-direction: column;
+                    gap: 8px;
+                    align-items: flex-start;
+                    margin-right: 32px;
+                }
+
                 .project-name{
                     margin-right: 16px;
                     font-size:22px;
@@ -55,7 +79,12 @@
 
                 .project-tools{
                     display: flex;
-                
+
+                    @include mobile {
+                        flex-wrap: wrap;
+                        row-gap: 8px;                                        
+                    }
+    
 
                     .project-tools__item{
                         border: 1px solid $primary-color;
@@ -76,11 +105,24 @@
 
 .about{
     margin-bottom: 112px;
+    @include mobile {
+        margin-bottom: 0px;
+    }
+
     .about__title{
         font-size: 72px;
         letter-spacing: -0.02em;
         width: 90%;
         margin-bottom: 32px;
+
+        @include mobile {
+            font-size: 56px;
+            width: 100%;
+        }
+
+
+
+        
     }
 
     .about__text{
@@ -89,5 +131,10 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 32px;
+
+        @include mobile {
+            width: 100%;
+        }
+
     }
 }

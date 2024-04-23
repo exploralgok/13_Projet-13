@@ -14,6 +14,11 @@
         display:flex;
         align-items: center;
 
+        @include mobile {
+            flex-direction: column;
+        }    
+
+
         li {
             list-style-type: none;
             padding: 0;
@@ -35,6 +40,7 @@
             font-size: 28px;
             letter-spacing: 0.03em;
             font-weight: 400;
+
         }
 
         .subtitle{
@@ -42,6 +48,13 @@
             letter-spacing: -0.02em;
             font-weight: 700;
             line-height: 0.1;
+
+            @include mobile {
+                font-size: 60px;
+                letter-spacing: -0.05em;
+                line-height: 1;
+                margin-top: 32px;
+            }    
 
             .word-highlight{
                 color: $secondary-color;
@@ -111,9 +124,15 @@
         .footer__social-media{
             display: flex;
 
+            @include mobile {
+                flex-direction: column;
+            }    
+
+
+
             .menu-footer{
                 .menu-item{
-                border: 1px solid $dsrk-grey;
+                border: 1px solid $dark-grey;
                 border-radius: 50px;
                 width: 330px;
                 height: 40px;

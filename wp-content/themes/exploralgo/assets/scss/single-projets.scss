@@ -1,6 +1,12 @@
   .hero-row{
     padding: 64px;
 
+    @include mobile {
+      flex-direction: column;
+      padding: 0;
+      }   
+
+
       .project-name{
         font-size: 72px;
         margin-top: 16px;
@@ -23,6 +29,9 @@
     display: flex;
     margin-bottom: 80px;
 
+    @include mobile {
+      flex-direction: column;
+    }   
 
     .first-column{
       flex:2; 
@@ -41,6 +50,11 @@
   .case-study{
     margin-right: 160px;
     margin-left: 160px;
+
+    @include mobile {
+      margin: 0;
+      }   
+
 
     .title-column{
       font-size: 48px;

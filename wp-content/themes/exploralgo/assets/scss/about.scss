@@ -3,6 +3,11 @@
     gap:16px;
     margin-bottom: 104px;
 
+
+    @include mobile {
+        flex-direction: column;
+        padding: 0;
+        }   
     .hero__content{
         display: flex;
         flex-direction: column;
@@ -32,6 +37,10 @@
         width: 50vh;
         flex:2;
 
+        @include mobile {
+            width: unset;
+            }   
+
         img{
             width: 100%;
             object-fit: contain;
@@ -58,6 +67,12 @@
     .experiences__details{
         display:flex;
         gap:64px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 8px;
+            }   
+    
         .experiences__item{
             flex: 2;
 
@@ -103,6 +118,10 @@
     .formations__list{
         display: flex;
         gap: 32px;
+        @include mobile {
+            flex-direction: column;
+            }   
+    
         .formations__item{
             flex : 1;
 
