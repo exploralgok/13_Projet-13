@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     button.addEventListener('click', function(e){
-    e.preventDefault();
+    // e.preventDefault();
     this.classList.add('is-done','is-active');
 
     setTimeout(function(){ 
